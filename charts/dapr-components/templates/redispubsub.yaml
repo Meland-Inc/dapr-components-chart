@@ -1,12 +1,12 @@
 apiVersion: dapr.io/v1alpha1
 kind: Component
 metadata:
-  name:  
+  name: pubsub
 spec:
   type: pubsub.redis
   version: v1
   metadata:
   - name: redisHost
-    value: redis-headless:6379
+    value: {{ .Values.redis.host }}
   - name: redisPassword
     value: ""
