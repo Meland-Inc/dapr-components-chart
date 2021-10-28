@@ -7,6 +7,6 @@ spec:
   version: v1
   metadata:
   - name: redisHost
-    value: redis-headless:6379
+    value: {{ .Values.redis.host }}
   - name: redisPassword
     value: ""
