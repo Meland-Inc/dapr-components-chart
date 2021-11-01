@@ -3,9 +3,3 @@ redis:
 
 zipkin:
   endpointAddress: zipkin-collector:9411/api/v2/spans
-
-licenseKey: ""
-
-endpoint: ""
-
-namespace: ""
