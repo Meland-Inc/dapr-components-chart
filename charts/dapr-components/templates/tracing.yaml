@@ -7,3 +7,5 @@ spec:
     samplingRate: "1"
     zipkin:
       endpointAddress: {{ .Values.zipkin.endpointAddress }}
+  metric:
+    enabled: true
