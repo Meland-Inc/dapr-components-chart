@@ -17,8 +17,9 @@ jobs:
       - name: Publish Helm chart
         uses: Meland-Inc/helm-gh-pages@master
         with:
-          charts_url: https://meland-inc.github.io/dapr-components-chart-repository/
-          repository: dapr-components-chart-repository
+          charts_url: https://meland-inc.github.io/charts/
+          repository: charts
+          target_dir: dapr-components
           branch: gh-pages
           charts_dir: dapr-charts
           token: ${{ secrets.BOT_GITHUB_TOKEN }}
